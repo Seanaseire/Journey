@@ -2,4 +2,8 @@
     <string name="app_name">Journey</string>
     <string name="title_home">Record</string>
     <string name="title_list">History</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
 </resources>

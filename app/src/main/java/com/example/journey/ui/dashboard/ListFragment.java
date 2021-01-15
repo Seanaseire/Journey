@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.journey.R;
 
-public class DashboardFragment extends Fragment {
+public class ListFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private ListViewModel listViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        listViewModel =
+                new ViewModelProvider(this).get(ListViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_list, container, false);
+        final TextView textView = root.findViewById(R.id.text_list);
+        listViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
