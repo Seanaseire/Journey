@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Journey</string>
+    <string name="title_home">Record</string>
+    <string name="title_list">History</string>
+</resources>
